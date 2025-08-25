@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Core Values</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            padding: 32px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 32px;
+            color: #2c3e50;
+        }
+        .slider {
+            position: relative;
+            width: 100%;
+            max-width: 700px;
+            margin: 0 auto 32px auto;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .slides {
+            display: flex;
+            transition: transform 0.7s ease;
+            width: 100%;
+        }
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+        .slide img {
+            width: 100%;
+            display: block;
+            border-radius: 10px;
+            height: 250px;
+            object-fit: cover;
+        }
+        .slider-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(44,62,80,0.7);
+            color: #fff;
+            border: none;
+            font-size: 2rem;
+            padding: 0 12px;
+            cursor: pointer;
+            border-radius: 50%;
+            z-index: 2;
+        }
+        .slider-btn.left { left: 10px; }
+        .slider-btn.right { right: 10px; }
+        .values {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+        }
+        @media (max-width: 700px) {
+            .values { grid-template-columns: 1fr; }
+            .container { padding: 16px; }
+        }
+        .value-card {
+            background: #f9fafb;
+            border-radius: 8px;
+            padding: 24px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+            display: flex;
+            align-items: flex-start;
+            gap: 18px;
+        }
+        .value-icon {
+            font-size: 2.5rem;
+            color: #2980b9;
+            flex-shrink: 0;
+            margin-top: 4px;
+        }
+        .value-content h2 {
+            margin: 0 0 10px 0;
+            font-size: 1.3rem;
+            color: #34495e;
+        }
+        .value-content ul {
+            margin: 0;
+            padding-left: 18px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Our Core Values</h1>
+        <!-- Image Slider -->
+        <div class="slider" id="slider">
+            <button class="slider-btn left" onclick="prevSlide()"><i class="fas fa-chevron-left"></i></button>
+            <div class="slides" id="slides">
+                <div class="slide"><img src="images/people1.jpeg" alt="Teamwork"></div>
+                <div class="slide"><img src="images/boug8.jpg" alt="Integrity"></div>
+                <div class="slide"><img src="images/boug5.jpg" alt="Responsibility"></div>
+                <div class="slide"><img src="images/canoe.jpeg" alt="Respect"></div>
+                <div class="slide"><img src="images/market2.jpeg" alt="Inclusion"></div>
+            </div>
+            <button class="slider-btn right" onclick="nextSlide()"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <!-- Values Section -->
+        <div class="values">
+            <div class="value-card">
+                <span class="value-icon"><i class="fas fa-shield-alt"></i></span>
+                <div class="value-content">
+                    <h2>Integrity</h2>
+                    <ul>
+                        <li>Practice professionalism, transparency, and best practices at workplace.</li>
+                        <li>Compliant to established guidelines, systems, processes, and procedures.</li>
+                        <li>Trust and value our clients, service providers, and the people of Bougainville and PNG.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="value-card">
+                <span class="value-icon"><i class="fas fa-tasks"></i></span>
+                <div class="value-content">
+                    <h2>Responsibility & Accountability</h2>
+                    <ul>
+                        <li>Deliver mandated tasks and duties effectively and efficiently.</li>
+                        <li>Accountable for decisions, actions, and inactions.</li>
+                        <li>Provide user-friendly services to clients, service providers, and stakeholders.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="value-card">
+                <span class="value-icon"><i class="fas fa-users"></i></span>
+                <div class="value-content">
+                    <h2>Relationship & Competence</h2>
+                    <ul>
+                        <li>Practice teamwork, collaboration, and cooperation within NCOBA.</li>
+                        <li>Collaborate and cooperate with external government agencies and stakeholders.</li>
+                        <li>Continuous improvement of skills, knowledge, and performance.</li>
+                        <li>Strive for excellence and results.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="value-card">
+                <span class="value-icon"><i class="fas fa-handshake"></i></span>
+                <div class="value-content">
+                    <h2>Respect</h2>
+                    <ul>
+                        <li>Value and respect each staff member and clients.</li>
+                        <li>Promote fairness and honesty at workplace.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="value-card">
+                <span class="value-icon"><i class="fas fa-venus-mars"></i></span>
+                <div class="value-content">
+                    <h2>Gender Equality & Social Inclusion</h2>
+                    <ul>
+                        <li>Embrace gender equality and social inclusion policy principles and applications at workplace.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Simple slider logic
+        const slides = document.getElementById('slides');
+        const totalSlides = slides.children.length;
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            if (index < 0) index = totalSlides - 1;
+            if (index >= totalSlides) index = 0;
+            slides.style.transform = `translateX(-${index * 100}%)`;
+            currentIndex = index;
+        }
+
+        function prevSlide() { showSlide(currentIndex - 1); }
+        function nextSlide() { showSlide(currentIndex + 1); }
+
+        // Auto-slide every 5 seconds
+        setInterval(() => { nextSlide(); }, 5000);
+
+        // Initialize
+        showSlide(0);
+    </script>
+</body>
+</html>

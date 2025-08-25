@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NCOBA - Bougainville Affairs</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/career.css" />
+   <link rel="stylesheet" href="styles/media.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <div class="top-header">
+      <img src="images/PNG-National-Emblem.png" alt="PNG National Crest" class="logo" />
+      <h1>National Coordination Office for Bougainville Affairs<br /><span>Department of Prime Minister & National Executive Council</span></h1>
+      <img src="images/logo13.png" alt="NCOBA Logo" class="logo" />
+    </div>
+
+    <!-- Menu icon (hamburger) -->
+<div class="menu-icon">
+  <i class="fas fa-bars"></i>
+</div>
+
+
+    <nav role="navigation" aria-label="Main navigation">
+      <ul class="main-nav">
+        <li class="dropdown"><a href="index.html">Home</a></li>
+
+       <li class="dropdown">
+          <a href="about.html">About Us</a>
+          <ul class="dropdown-content">
+             <li><a href="#about">About NCOBA</a></li>
+              <li><a href="#minister">Minister's Message</a></li>
+              <li><a href="#director">Director's Message</a></li>
+            <li><a href="#senior">Senior Management</a></li>
+            <li><a href="#division">Our Divisions</a></li>
+          </ul>
+        </li>
+        
+        <li class="dropdown">
+          <a href="program.html">Programs & Services</a>
+          <ul class="dropdown-content">
+            <li><a href="#activities">Activities</a></li>
+            <li><a href="#participant">e-Participations</a></li>
+            <li><a href="#consultation">Consultation Papers</a></li>
+            <li><a href="#special">Special Projects</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="public.html">Publications</a>
+          <ul class="dropdown-content">
+            <li><a href="#annual">Annual Reports</a></li>
+            <li><a href="#legis">Legislations</a></li>
+            <li><a href="#govt">Govt Plans & Policies</a></li>
+            <li><a href="#plans">NCOBA Plans</a></li>
+            <li><a href="#bougainville">Bougainville Plans</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="news.html">News & Events</a>
+          <ul class="dropdown-content">
+            <li><a href="#news">News & Public Notices</a></li>
+            <li><a href="#tender">Tender Notice Board</a></li>
+            <li><a href="#speech">Speeches</a></li>
+            <li><a href="#press">Press Releases</a></li>
+            <li><a href="#calender">Calendar of Events</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="media.html">Media & Awareness</a>
+          <ul class="dropdown-content">
+            <li><a href="#social">NCOBA Social Media Platforms</a></li>
+            <li><a href="#bulletin">NCOBA Bulletin</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#videos">Videos</a></li>
+            <li><a href="#archives">Archives</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="issues.html">NCOBA Co-Issues</a>
+          <ul class="dropdown-content">
+            <li><a href="#peace">Bougainville Peace Agreement</a></li>
+            <li><a href="#refer">Referendum</a></li>
+            <li><a href="#const">Consultation</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="career.html">Careers</a>
+          <ul class="dropdown-content">
+            <li><a href="#job">Job Opportunities</a></li>
+            <li><a href="#scholar">Scholarships</a></li>
+            <li><a href="#internship">Training & Education</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="contact.html">Contact Us</a>
+          <ul class="dropdown-content">
+            <li><a href="#general">General Inquiries</a></li>
+            <li><a href="#office">Office Locations</a></li>
+            <li><a href="#feedback">Feedback Form</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="scrolling-text">
+      <p>"From Peace to Autonomy, to Referendum and Beyond"</p>
+    </div>
+  </header>
+
+ <style>
+      
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+      
+
+       
+        
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.1em;
+        }
+
+        /* Image Slider */
+        .slider-container {
+            width: 100%;
+            height: 550px;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 40px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+        }
+
+        .slides {
+            display: flex;
+            width: 300%; /* 3 slides */
+            height: 100%;
+            animation: slide-animation 3s infinite ease-in-out;
+        }
+
+        .slide {
+            width: 33.333%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .slide-1 { background-image: url('web-images/IMG_4093.JPG'); }
+        .slide-2 { background-image: url('web-images/IMG_4501.JPG'); }
+        .slide-3 { background-image: url('web-images/IMG_4376.JPG'); }
+
+        @keyframes slide-animation {
+            0%, 28% { margin-left: 0; }
+            33%, 61% { margin-left: -100%; }
+            66%, 94% { margin-left: -200%; }
+            100% { margin-left: 0; }
+        }
+
+        /* Section Layout */
+        .section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 60px 0;
+            gap: 40px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .section-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .section-cards {
+            flex: 2;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        /* Alternate layout for even-numbered sections */
+        .section:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .section-text h2 {
+            font-size: 2.8em;
+            color: #004080;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .section-text p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        /* Card Styling */
+        .card {
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            padding: 25px;
+            width: 100%;
+            max-width: 320px;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+        }
+
+        .card h3 {
+            font-size: 1.4em;
+            color: #0059b3;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            flex-grow: 1;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .card a {
+            display: block;
+            text-align: center;
+            background-color: #007bff;
+            color: white;
+            padding: 12px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .card a:hover {
+            background-color: #0056b3;
+        }
+
+  
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>National Coordination Office for Bougainville Affairs</h1>
+            <p>Opportunities for Growth, Development, and Service</p>
+        </div>
+    </header>
+
+    <div class="slider-container">
+        <div class="slides">
+            <div class="slide slide-1"></div>
+            <div class="slide slide-2"></div>
+            <div class="slide slide-3"></div>
+        </div>
+    </div>
+
+    <main class="container">
+
+        <!-- Careers Section -->
+        <section id="careers" class="section">
+            <div class="section-text">
+                <h2>Careers at NCOBA</h2>
+                <p>Join a dedicated team at the heart of national policy and coordination. We seek skilled professionals committed to public service and the successful implementation of the Bougainville Peace Agreement.</p>
+            </div>
+            <div class="section-cards">
+                <div class="card">
+                    <h3>Senior Policy Advisor</h3>
+                    <p>Analyze complex policies and provide high-level strategic advice on matters concerning Bougainville affairs.</p>
+                    <a href="#">View Details</a>
+                </div>
+                <div class="card">
+                    <h3>Project Management Officer</h3>
+                    <p>Coordinate and manage key government projects and initiatives related to peace-building and development in the region.</p>
+                    <a href="#">View Details</a>
+                </div>
+                <div class="card">
+                    <h3>Communications Officer</h3>
+                    <p>Manage public relations, stakeholder engagement, and official communications for the office.</p>
+                    <a href="#">View Details</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scholarships Section -->
+        <section id="scholarships" class="section">
+            <div class="section-text">
+                <h2>NCOBA Scholarship Program</h2>
+                <p>We are committed to building future capacity. Our scholarship programs support outstanding students dedicated to contributing to the future of Bougainville and Papua New Guinea.</p>
+            </div>
+            <div class="section-cards">
+                <div class="card">
+                    <h3>Peace & Development Scholarship</h3>
+                    <p>For students pursuing degrees in Political Science, Law, International Relations, or Development Studies.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="card">
+                    <h3>Bougainville Future Leaders Scholarship</h3>
+                    <p>A prestigious award for exceptional students from Bougainville to support their tertiary education journey.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Internships & Graduate Programs Section -->
+        <section id="training" class="section">
+            <div class="section-text">
+                <h2>Internships & Graduate Programs</h2>
+                <p>Gain invaluable hands-on experience in public administration and policy. Our programs are designed to mentor and develop the next generation of public servants.</p>
+            </div>
+            <div class="section-cards">
+                <div class="card">
+                    <h3>Graduate Development Program</h3>
+                    <p>A structured 18-month program for recent graduates to build a career in public service and policy coordination.</p>
+                    <a href="#">Apply Now</a>
+                </div>
+                <div class="card">
+                    <h3>NCOBA Internship Program</h3>
+                    <p>A 3-month placement offering practical experience in government operations, research, and project support.</p>
+                    <a href="#">Apply Now</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+  
+  <footer>
+  <!-- Contact Us -->
+  <div class="footer-column">
+    <h4>Contact Us</h4>
+    <p>📍 P.O Box 639<br />WAIGANI<br />National Capital District, Koitachi Haus</p>
+    <p>📞 Telephone: 325 2950 / 3036 807 Facsimile: 325 8368</p>
+    <p>📧Email: office@ncoba.gov.pg</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3935.660720719399!2d147.18933577366693!3d-9.451119590628045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x69023117a8ff8087%3A0xad68a1fe565b8b44!2sKoitachi%20Haus!5e0!3m2!1sen!2spg!4v1755173775361!5m2!1sen!2spg" width="210" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+
+  <!-- Useful Links -->
+  <div class="footer-column">
+    <h4>Useful Links</h4>
+    <ul>
+      <li><a href="https://www.treasury.gov.pg/">Department of Treasury</a></li>
+      <li><a href="https://www.bankpng.gov.pg/">Bank of Papua New Guinea</a></li>
+      <li><a href="https://www.planning.gov.pg/commingsoon/ ">Department of National Planning & Monitering</a></li>
+      <li><a href="https://www.pmnec.gov.pg/">Department of Prime Minister & National Executive Council</a></li>
+      <li><a href="https://www.dpm.gov.pg/">Department of Personal Management</a></li>
+      <li><a href="https://abg.gov.pg/">Autonomous Bougainville Government (ABG)</a></li>
+    </ul>
+  </div>
+
+  <!-- Related Links -->
+  <div class="footer-column">
+    <h4>Related Links</h4>
+    <ul>
+      <li><a href="#https://abg.gov.pg/about/history">Bougainville Journey of the Present</a></li>
+      <li><a href="https://abg.gov.pg/">Bougainville Government</a></li>
+      <li><a href="#https://en.wikipedia.org/wiki/Bougainville_Executive_Council">National Executive Council-Bougainville,PNG</a></li>
+      <li><a href="#https://www.dfa.gov.pg/protocol-division/">PNG Foreign Affairs</a></li>
+      <li><a href="#https://png-data.sprep.org/group/5">PNG Environmental Data Protocol </a></li>
+    </ul>
+  </div>
+
+  <!-- Help & Support -->
+  <div class="footer-column">
+    <h4>Help & Support</h4>
+    <p>If you need assistance with our services, publications, or online tools, we're here to help.</p>
+    <ul>
+      <li><a href="contact.html">FAQs</a></li>
+      <li><a href="contact.html">Contact Support</a></li>
+      <li><a href="contact.html">Feedback Form</a></li>
+      <li><a href="contact.html">Accessibility Help</a></li>
+    </ul>
+  </div>
+
+  <!-- Follow Us -->
+  <div class="footer-column">
+    <h4>Follow Us</h4>
+    <p>Stay connected with NCOBA through our official social media channels:</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/company/national-coordination-of-bougainville-affairs-ncoba-awareness/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=61576740221999" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.youtube.com/@ncobanewsupdates" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.instagram.com/ncoba2025/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@bougainvilletalks" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="https://x.com/Ncoba2025" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+    <form class="newsletter-form" action="https://formspree.io/f/" method="POST">
+      <label for="newsletter">📩 Subscribe to our newsletter:</label><br />
+      <input type="email" id="newsletter" name="email" placeholder="example@gmail.com" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</footer>
+
+<div class="footer-bottom">
+  <p>PRIVACY STATEMENT | ACCESSIBILITY INFORMATION | TERMS OF USE</p>
+  <p>COPYRIGHT ©2025 All rights reserved. Department of Prime Minister & National Executive Council, Papua New Guinea</p>
+</div>
+
+<script>
+ const menuIcon = document.querySelector(".menu-icon");
+  const nav = document.querySelector("nav");
+
+  menuIcon.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NCOBA - Bougainville Affairs</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/pubb.css" />
+  <link rel="stylesheet" href="styles/about.css" />
+   <link rel="stylesheet" href="styles/media.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <div class="top-header">
+      <img src="images/PNG-National-Emblem.png" alt="PNG National Crest" class="logo" />
+      <h1>National Coordination Office for Bougainville Affairs<br /><span>Department of Prime Minister & National Executive Council</span></h1>
+      <img src="images/logo13.png" alt="NCOBA Logo" class="logo" />
+    </div>
+
+    <!-- Menu icon (hamburger) -->
+<div class="menu-icon">
+  <i class="fas fa-bars"></i>
+</div>
+
+
+    <nav role="navigation" aria-label="Main navigation">
+      <ul class="main-nav">
+        <li class="dropdown"><a href="index.html">Home</a></li>
+
+        <li class="dropdown">
+          <a href="about.html">About Us</a>
+          <ul class="dropdown-content">
+             <li><a href="#about">About NCOBA</a></li>
+              <li><a href="#minister">Minister's Message</a></li>
+              <li><a href="#director">Director's Message</a></li>
+            <li><a href="#senior">Senior Management</a></li>
+            <li><a href="#division">Our Divisions</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="program.html">Programs & Services</a>
+          <ul class="dropdown-content">
+            <li><a href="#activities">Activities</a></li>
+            <li><a href="#participant">e-Participations</a></li>
+            <li><a href="#consultation">Consultation Papers</a></li>
+            <li><a href="#special">Special Projects</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="public.html">Publications</a>
+          <ul class="dropdown-content">
+            <li><a href="#annual">Annual Reports</a></li>
+            <li><a href="#legis">Legislations</a></li>
+            <li><a href="#govt">Govt Plans & Policies</a></li>
+            <li><a href="#plans">NCOBA Plans</a></li>
+            <li><a href="#bougainville">Bougainville Plans</a></li>
+          </ul>
+        </li>
+   <li class="dropdown">
+          <a href="news.html">News & Events</a>
+          <ul class="dropdown-content">
+            <li><a href="#news">News & Public Notices</a></li>
+            <li><a href="#tender">Tender Notice Board</a></li>
+            <li><a href="#speech">Speeches</a></li>
+            <li><a href="#press">Press Releases</a></li>
+            <li><a href="#calender">Calendar of Events</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="media.html">Media & Awareness</a>
+          <ul class="dropdown-content">
+            <li><a href="#social">NCOBA Social Media Platforms</a></li>
+            <li><a href="#bulletin">NCOBA Bulletin</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#videos">Videos</a></li>
+            <li><a href="#archives">Archives</a></li>
+          </ul>
+        </li>
+
+         <li class="dropdown">
+          <a href="issues.html">NCOBA Co-Issues</a>
+          <ul class="dropdown-content">
+            <li><a href="#peace">Bougainville Peace Agreement</a></li>
+            <li><a href="#refer">Referendum</a></li>
+            <li><a href="#const">Consultation</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="career.html">Careers</a>
+          <ul class="dropdown-content">
+            <li><a href="#job">Job Opportunities</a></li>
+            <li><a href="#scholar">Scholarships</a></li>
+            <li><a href="#internship">Training & Education</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="contact.html">Contact Us</a>
+          <ul class="dropdown-content">
+            <li><a href="#general">General Inquiries</a></li>
+            <li><a href="#office">Office Locations</a></li>
+            <li><a href="#feedback">Feedback Form</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="scrolling-text">
+      <p>"From Peace to Autonomy, to Referendum and Beyond"</p>
+    </div>
+  </header>
+
+  
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Merriweather:wght@400;700&display=swap');
+
+
+  
+
+       
+        
+    
+  
+        .content-section {
+            background-color: var(--card-bg);
+            margin: 2rem auto;
+            padding: 2.5rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            max-width: 960px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s forwards;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .content-section:hover {
+            transform: translateY(20px) scale(1.02);
+            box-shadow: 0 8px 25px rgba(0, 82, 155, 0.15);
+        }
+
+        .content-section img {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: var(--border-radius);
+            margin-bottom: 1.5rem;
+            border: 3px solid var(--bg-color);
+        }
+
+        .content-section p {
+            text-align: justify;
+            margin-bottom: 1rem;
+        }
+        
+        .content-section ul {
+                list-style-type: '✔ ';
+                padding-left: 20px;
+        }
+
+        .content-section a {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: #3094e5;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .content-section a:hover {
+            background-color: #003d73;
+            transform: scale(1.05);
+        }
+        
+        .image-gallery {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 1rem;
+                margin-top: 1.5rem;
+        }
+        
+        .image-gallery img {
+                border-radius: 5px;
+                transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .image-gallery img:hover {
+                transform: scale(1.08);
+                opacity: 0.85;
+                cursor: pointer;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideInDown {
+                from { transform: translateY(-50px); opacity: 0; }
+                to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Staggered animation for sections */
+        .content-section:nth-of-type(1) { animation-delay: 0.2s; }
+        .content-section:nth-of-type(2) { animation-delay: 0.4s; }
+        .content-section:nth-of-type(3) { animation-delay: 0.6s; }
+        .content-section:nth-of-type(4) { animation-delay: 0.8s; }
+        .content-section:nth-of-type(5) { animation-delay: 1.0s; }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>A Nation's Blueprint: Understanding PNG & Bougainville's Future</h1>
+        <p>Explore the foundational documents that chart the course for Papua New Guinea and the Autonomous Region of Bougainville. From economic strategies and legislative frameworks to detailed roadmaps for peace and sovereignty, these plans are the pillars of modern nation-building.</p>
+    </header>
+
+    <main>
+        <section id="annual" class="content-section">
+            <h2>📊 Annual Reports: The Nation's Financial Pulse</h2>
+            <img src="web-images/16NZConsultation1.jpg" alt="A professional cover of an annual report" />
+            <p>
+                Annual reports in Papua New Guinea serve as critical barometers of the nation's economic and social health. They provide transparent, data-driven narratives that are indispensable for policymakers, investors, and citizens. The <strong>Bank of Papua New Guinea (BPNG)</strong> has been a cornerstone of this practice, with reports dating back to 2001. Initially focused on core financial statements, these documents have evolved into comprehensive analyses covering monetary policy effectiveness, inflation dynamics, foreign exchange reserves, and the stability of the entire banking sector. They offer a granular view of PNG's macroeconomic environment, tracking key indicators like GDP growth and credit expansion.
+            </p>
+            <p>
+                Similarly, international partners like the <strong>United Nations Development Programme (UNDP)</strong> contribute vital perspectives. The UNDP's 2024 report, for instance, moves beyond pure economics to assess progress against the Sustainable Development Goals (SDGs). It highlights tangible outcomes in crucial areas such as gender equality initiatives, climate resilience projects in vulnerable communities, and peacebuilding efforts in post-conflict regions. These reports connect local actions to global goals, illustrating how international cooperation is shaping a more equitable and sustainable future for PNG. Together, these documents form a rich tapestry of evidence, essential for holding institutions accountable and steering the nation forward.
+            </p>
+            <a href="https://www.bankpng.gov.pg/publications/annual-reports" target="_blank">Explore Bank of PNG Reports</a>
+        </section>
+
+        <section id="legis" class="content-section">
+            <h2>📜 Legislations: The Bedrock of Governance</h2>
+            <img src="web-images/16NZConsultation2.jpg" alt="The interior of the Papua New Guinea Parliament House" />
+            <p>
+                The legislative framework of Papua New Guinea is a dynamic system rooted in its unique single-chamber National Parliament, comprising 111 members who represent the diverse constituencies of the nation. The official <a href="https://parliament.gov.pg/index.php/bills-and-legislation" target="_blank">Bills and Legislation portal</a> is the primary gateway to understanding the laws being debated and enacted. However, for a deeper historical and legal context, the <strong>Pacific Islands Legal Information Institute (PacLII)</strong> is an unparalleled resource. It hosts a vast repository of constitutional instruments, foundational organic laws, and meticulously annotated ordinances that trace back to the colonial era of the 1880s.
+            </p>
+            <p>
+                This legal architecture governs every facet of life in PNG. Key legislations like the <em>Organic Law on Provincial Governments and Local-level Governments</em> define the country's decentralized governance structure. Other laws address critical contemporary issues, from land rights and environmental protection of its rich biodiversity to frameworks for digital governance and the complex autonomy arrangements for Bougainville. A thorough understanding of these legal foundations is not merely an academic exercise; it is fundamental for effective civic engagement, robust policy advocacy, and ensuring the rule of law prevails.
+            </p>
+        </section>
+
+        <section id="govt" class="content-section">
+            <h2>🏛️ Government Plans & Policies: Charting a K200 Billion Economy</h2>
+            <img src="web-images/16NZConsultation3.jpg" alt="A strategic planning session with government officials" />
+            <p>
+                The <strong>Medium Term Development Plan IV (MTDP IV)</strong> for 2023–2027 is the government's bold and ambitious strategy to transform Papua New Guinea's economy and society. Central to this plan is the vision to grow the economy to an unprecedented K200 billion, create one million new jobs, and elevate PNG to the status of a middle-income country. This vision is encapsulated in the powerful slogan, "Take Back PNG," which emphasizes economic independence and national empowerment.
+            </p>
+            <p>
+                The plan is structured around 12 Strategic Priority Areas (SPAs), including:
+                <ul>
+                    <li><strong>Strategic Economic Investment:</strong> Focusing on sustainable resource development and downstream processing.</li>
+                    <li><strong>Infrastructure Development:</strong> Through the flagship "Connect PNG" program to build and maintain roads, ports, and airports.</li>
+                    <li><strong>Health and Education:</strong> Improving service delivery and human capital.</li>
+                    <li><strong>Climate Resilience and Digital Governance:</strong> Modernizing the nation to meet 21st-century challenges.</li>
+                </ul>
+                This plan is a direct implementation of the long-term <strong>PNG Development Strategic Plan (PNGDSP) 2010–2030</strong>, ensuring that short-term actions are aligned with a broader vision of inclusive, sustainable growth. It's a comprehensive blueprint for leveraging the nation's resources for the benefit of all its citizens.
+            </p>
+            <a href="https://www.mtdp.gov.pg/" target="_blank">Visit the MTDP IV Official Site</a>
+        </section>
+
+        <section id="plans" class="content-section">
+            <h2>📘 NCOBA Plans: Coordinating Peace and Autonomy</h2>
+            <img src="web-images/4KITX5A_boug_png_indepence_jpg.webp" alt="Cover of the NCOBA corporate plan document" />
+            <p>
+                The corporate plan of the <strong>National Coordination Office of Bougainville Affairs (NCOBA)</strong> for 2020–2025 represents a critical institutional milestone in Bougainville’s complex post-referendum journey. Following the overwhelming vote for independence, NCOBA was tasked with the delicate and vital role of coordinating efforts between the National Government and the Autonomous Bougainville Government (ABG). Its mission is centered on the three pillars of the Bougainville Peace Agreement (BPA): peace, autonomy, and a referendum.
+            </p>
+            <p>
+                The plan outlines clear Key Performance Indicators (KPIs) to measure progress. These include tangible goals like weapons disposal and control, the strengthening of ABG's institutions to prepare for greater self-governance, and fostering socio-economic development to ensure a "peace dividend" for the people. Guided by the BPA, NCOBA aims to foster transparency and dialogue, utilizing digital platforms to keep all stakeholders informed. It is the administrative engine driving the political consultations, navigating the intricate transition from autonomy towards a final political settlement.
+            </p>
+            <div class="image-gallery">
+                <img src="web-images/IMG-20250614-WA0034.jpg" alt="Signing of the Bougainville Peace Agreement">
+                <img src="web-images/IMG-20250614-WA0035.jpg" alt="The flag of the Autonomous Region of Bougainville">
+                <img src="web-images/IMG-20250614-WA0038.jpg" alt="A consultation meeting between ABG and National Government">
+            </div>
+        </section>
+
+        <section id="bougainville" class="content-section">
+            <h2>🌄 Bougainville Plans: A Vision for Sovereignty</h2>
+            <img src="web-images/IMG-20250614-WA0040.jpg" alt="A scenic view of Bougainville's mountains at sunrise, symbolizing a new dawn" />
+            <p>
+                Bougainville's future is being meticulously planned through two landmark documents: the aspirational <strong>Bougainville Vision 2052</strong> and the pragmatic <strong>Bougainville Integrated Strategic Development Plan (BISDP) 2023–2027</strong>. Together, they articulate a clear and powerful roadmap towards sovereignty, economic self-reliance, and cultural preservation. The BISDP is built upon eight foundational pillars, including human development, peace and justice, sustainable infrastructure, and climate resilience, reflecting a holistic, grassroots-driven approach to nation-building.
+            </p>
+            <p>
+                With a political target of achieving independence by 2027, the region is making strategic investments to build a viable economy. This includes exploring the establishment of its own gold refinery to capture more value from its mineral resources, implementing comprehensive land reform, and developing modern digital governance systems. These plans are not just government directives; they are a reflection of Bougainvillean identity, values, and the collective aspiration for self-determination, blending local customs with global standards of governance and development.
+            </p>
+            <a href="https://abg.gov.pg/uploads/documents/BISDP_2023-2027_final_compressed.pdf" target="_blank">Download the Bougainville BISDP</a>
+        </section>
+   
+  
+  <footer>
+  <!-- Contact Us -->
+  <div class="footer-column">
+    <h4>Contact Us</h4>
+    <p>📍 P.O Box 639<br />WAIGANI<br />National Capital District, Koitachi Haus</p>
+    <p>📞 Telephone: 325 2950 / 3036 807 Facsimile: 325 8368</p>
+    <p>📧Email: office@ncoba.gov.pg</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3935.660720719399!2d147.18933577366693!3d-9.451119590628045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x69023117a8ff8087%3A0xad68a1fe565b8b44!2sKoitachi%20Haus!5e0!3m2!1sen!2spg!4v1755173775361!5m2!1sen!2spg" width="210" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+
+  <!-- Useful Links -->
+  <div class="footer-column">
+    <h4>Useful Links</h4>
+    <ul>
+      <li><a href="https://www.treasury.gov.pg/">Department of Treasury</a></li>
+      <li><a href="https://www.bankpng.gov.pg/">Bank of Papua New Guinea</a></li>
+      <li><a href="https://www.planning.gov.pg/commingsoon/ ">Department of National Planning & Monitering</a></li>
+      <li><a href="https://www.pmnec.gov.pg/">Department of Prime Minister & National Executive Council</a></li>
+      <li><a href="https://www.dpm.gov.pg/">Department of Personal Management</a></li>
+      <li><a href="https://abg.gov.pg/">Autonomous Bougainville Government (ABG)</a></li>
+    </ul>
+  </div>
+
+   <!-- Related Links -->
+  <div class="footer-column">
+    <h4>Related Links</h4>
+    <ul>
+      <li><a href="#https://abg.gov.pg/about/history">Bougainville Journey of the Present</a></li>
+      <li><a href="https://abg.gov.pg/">Bougainville Government</a></li>
+      <li><a href="#https://en.wikipedia.org/wiki/Bougainville_Executive_Council">National Executive Council-Bougainville,PNG</a></li>
+      <li><a href="#https://www.dfa.gov.pg/protocol-division/">PNG Foreign Affairs</a></li>
+      <li><a href="#https://png-data.sprep.org/group/5">PNG Environmental Data Protocol </a></li>
+    </ul>
+  </div>
+
+  <!-- Help & Support -->
+  <div class="footer-column">
+    <h4>Help & Support</h4>
+    <p>If you need assistance with our services, publications, or online tools, we're here to help.</p>
+    <ul>
+      <li><a href="#">FAQs</a></li>
+      <li><a href="#">Contact Support</a></li>
+      <li><a href="#">Feedback Form</a></li>
+      <li><a href="#">Accessibility Help</a></li>
+    </ul>
+  </div>
+
+  <!-- Follow Us -->
+  <div class="footer-column">
+    <h4>Follow Us</h4>
+    <p>Stay connected with NCOBA through our official social media channels:</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/company/national-coordination-of-bougainville-affairs-ncoba-awareness/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=61576740221999" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.youtube.com/@ncobanewsupdates" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.instagram.com/ncoba2025/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@bougainvilletalks" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="https://x.com/Ncoba2025" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+    <form class="newsletter-form" action="https://formspree.io/f/" method="POST">
+      <label for="newsletter">📩 Subscribe to our newsletter:</label><br />
+      <input type="email" id="newsletter" name="email" placeholder="example@gmail.com" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</footer>
+
+<div class="footer-bottom">
+  <p>PRIVACY STATEMENT | ACCESSIBILITY INFORMATION | TERMS OF USE</p>
+  <p>COPYRIGHT ©2025 All rights reserved. Department of Prime Minister & National Executive Council, Papua New Guinea</p>
+</div>
+<script>
+ const menuIcon = document.querySelector(".menu-icon");
+  const nav = document.querySelector("nav");
+
+  menuIcon.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+  </script>
+</body>
+</html>
