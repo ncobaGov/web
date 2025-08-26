@@ -1,0 +1,130 @@
+/* Section */
+section#projects {
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+section#projects h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #578dbe;
+}
+
+/* Grid layout */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Project card */
+.project-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Content */
+.project-content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project-content h3 {
+  font-size: 1.3rem;
+  color: #578dbe;
+}
+
+.project-content p {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section#projects h2 {
+    font-size: 1.5rem;
+  }
+
+  .project-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .project-content p {
+    font-size: 0.85rem;
+  }
+}
+/* Menu icon styling */
+.menu-icon {
+  display: none;
+  font-size: 32px;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+  color: black;
+  background: #578dbe;
+}
+
+/* Responsive view */
+@media (max-width: 900px) {
+  .menu-icon {
+    display: block;        /* show menu icon */
+    width: 100%;
+  }
+
+  nav {
+    display: none;         /* hide by default */
+  }
+
+  nav.active {
+    display: block;        /* show when toggled */
+  }
+
+  .main-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main-nav > li {
+    margin: 10px 0;
+  }
+
+  /* Fix dropdowns in mobile */
+  .dropdown-content {
+    position: relative;    /* stack under parent */
+    background: #578dbe;
+    padding-left: 20px;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: none; /* disable hover on mobile */
+  }
+
+  .dropdown.open .dropdown-content {
+    display: block; /* show when clicked */
+  }
+}

@@ -1,0 +1,330 @@
+/* Base styles */
+#general {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #f0f4f8;
+  border-radius: 8px;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+#general h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  font-size: 1.5rem;
+}
+
+.contact-links {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.contact-links li a {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.contact-links li a:hover {
+  text-decoration: underline;
+}
+
+#general-inquiry-form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #34495e;
+  font-size: 0.95rem;
+}
+
+#general-inquiry-form input,
+#general-inquiry-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+#general-inquiry-form textarea {
+  resize: vertical;
+}
+
+#general-inquiry-form button {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+#general-inquiry-form button:hover {
+  background-color: #005fa3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  #general {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  #general h2 {
+    font-size: 1.25rem;
+  }
+
+  #general-inquiry-form label {
+    font-size: 0.9rem;
+  }
+
+  #general-inquiry-form input,
+  #general-inquiry-form textarea {
+    font-size: 0.95rem;
+  }
+
+  #general-inquiry-form button {
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+}
+
+
+#office-location {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #eef6f9;
+  border-radius: 8px;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+#office-location h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  font-size: 1.5rem;
+}
+
+.location-details {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #34495e;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 6px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  #office-location {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  #office-location h2 {
+    font-size: 1.25rem;
+  }
+
+  .location-details {
+    font-size: 0.95rem;
+  }
+
+  .map-container iframe {
+    height: 250px;
+  }
+}
+
+#feedback {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #fefefe;
+  border-radius: 8px;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+#feedback h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  font-size: 1.5rem;
+}
+
+.contact-links {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.contact-links li a {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.contact-links li a:hover {
+  text-decoration: underline;
+}
+
+#feedback-form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #34495e;
+  font-size: 0.95rem;
+}
+
+#feedback-form input,
+#feedback-form select,
+#feedback-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+#feedback-form textarea {
+  resize: vertical;
+}
+
+.rating-options {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.rating-options label {
+  flex: 1;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+#feedback-form button {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+#feedback-form button:hover {
+  background-color: #005fa3;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  #feedback {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  #feedback h2 {
+    font-size: 1.25rem;
+  }
+
+  #feedback-form label {
+    font-size: 0.9rem;
+  }
+
+  #feedback-form input,
+  #feedback-form select,
+  #feedback-form textarea {
+    font-size: 0.95rem;
+  }
+
+  .rating-options {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .rating-options label {
+    flex: 1 1 30%;
+  }
+
+  #feedback-form button {
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+}
+/* Menu icon styling */
+.menu-icon {
+  display: none;
+  font-size: 32px;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+  color: black;
+  background: #578dbe;
+}
+
+/* Responsive view */
+@media (max-width: 900px) {
+  .menu-icon {
+    display: block;        /* show menu icon */
+    width: 100%;
+  }
+
+  nav {
+    display: none;         /* hide by default */
+  }
+
+  nav.active {
+    display: block;        /* show when toggled */
+  }
+
+  .main-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main-nav > li {
+    margin: 10px 0;
+  }
+
+  /* Fix dropdowns in mobile */
+  .dropdown-content {
+    position: relative;    /* stack under parent */
+    background: #578dbe;
+    padding-left: 20px;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: none; /* disable hover on mobile */
+  }
+
+  .dropdown.open .dropdown-content {
+    display: block; /* show when clicked */
+  }
+}

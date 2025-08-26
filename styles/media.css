@@ -1,0 +1,176 @@
+ /* --- Basic Reset & Body Styles --- */
+        :root {
+            --primary-color: #0a2b4c;
+            --secondary-color: #1a5ca3;
+            --accent-color: #f39c12;
+            --text-color: #333;
+            --light-text-color: #f4f4f4;
+            --bg-color: #ffffff;
+            --section-bg-color: #f9f9f9;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* --- Navigation Bar --- */
+      
+        nav ul li a .fa-caret-down {
+            margin-left: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        /* --- Dropdown Menu --- */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: var(--primary-color);
+            min-width: 250px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            list-style: none;
+            border-top: 3px solid var(--accent-color);
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        .dropdown-content li a {
+            padding: 12px 16px;
+            white-space: nowrap;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropdown:hover .fa-caret-down {
+            transform: rotate(180deg);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* --- Main Content Sections --- */
+        main {
+            padding-top: 2rem;
+        }
+
+        section {
+            padding: 4rem 2rem;
+            border-bottom: 1px solid #ddd;
+        }
+
+        section:nth-child(odd) {
+            background-color: var(--section-bg-color);
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+            color: var(--primary-color);
+        }
+
+        section h2 i {
+            margin-right: 10px;
+            color: var(--accent-color);
+        }
+
+        /* --- Specific Section Styles --- */
+        #social .social-links {
+            text-align: center;
+        }
+
+        .social-icon {
+            display: inline-block;
+            margin: 0 15px;
+            padding: 10px 20px;
+            background-color: var(--secondary-color);
+            color: var(--light-text-color);
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .social-icon:hover {
+            background-color: var(--accent-color);
+            transform: translateY(-5px);
+        }
+
+        .btn {
+            display: block;
+            width: fit-content;
+            margin: 1rem auto;
+            padding: 12px 25px;
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--secondary-color);
+            color: var(--light-text-color);
+        }
+
+        #gallery .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        #gallery .image-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        #gallery .image-grid img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        #videos .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 800px;
+            margin: 0 auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            border-radius: 8px;
+        }
+
+        #videos .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        #archives ul {
+            list-style: none;
+            text-align: center;
+        }
+
+        #archives ul li {
+            margin: 10px 0;
+        }
+
+        #archives ul li a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        #archives ul li a:hover {
+            text-decoration: underline;
+            color: var(--accent-color);
+        }

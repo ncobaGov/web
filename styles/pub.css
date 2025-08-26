@@ -1,0 +1,226 @@
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.slider {
+            position: relative;
+            height: 300px;
+            overflow: hidden;
+        }
+        .slides {
+            display: flex;
+            width: 300%;
+            animation: slide 12s infinite;
+        }
+        .slide {
+            width: 100vw;
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+        }
+        .slide1 { background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80'); }
+        .slide2 { background-image: url('https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80'); }
+        .slide3 { background-image: url('https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80'); }
+
+        @keyframes slide {
+            0% {margin-left: 0;}
+            33% {margin-left: 0;}
+            38% {margin-left: -100vw;}
+            66% {margin-left: -100vw;}
+            71% {margin-left: -200vw;}
+            100% {margin-left: -200vw;}
+        }
+
+        .publications-section {
+            background: rgba(255,255,255,0.95);
+            margin-top: -100px;
+            padding: 40px 0 20px 0;
+            position: relative;
+            z-index: 2;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2.2em;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+        .pub-categories {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        .pub-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            width: 260px;
+            padding: 24px 18px;
+            text-align: center;
+            transition: box-shadow 0.2s;
+        }
+        .pub-card:hover {
+            box-shadow: 0 4px 16px rgba(44,62,80,0.15);
+        }
+        .pub-icon {
+            font-size: 2.5em;
+            color: #2980b9;
+            margin-bottom: 12px;
+        }
+        .pub-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #34495e;
+        }
+        .pub-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .pub-links li {
+            margin: 8px 0;
+        }
+        .pub-links a {
+            color: #2980b9;
+            text-decoration: none;
+            font-size: 1em;
+            transition: color 0.2s;
+        }
+        .pub-links a:hover {
+            color: #1abc9c;
+            text-decoration: underline;
+        }
+
+/* Responsive typography */
+@media (min-width: 768px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  a {
+    font-size: 1rem;
+  }
+}
+
+/* Optional: Add spacing between sections on larger screens */
+@media (min-width: 1024px) {
+  section {
+    padding: 3rem 2rem;
+  }
+}
+/* Menu icon styling */
+.menu-icon {
+  display: none;
+  font-size: 32px;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+  color: black;
+  background: #578dbe;
+}
+
+/* Responsive view */
+@media (max-width: 900px) {
+  .menu-icon {
+    display: block;        /* show menu icon */
+    width: 100%;
+  }
+
+  nav {
+    display: none;         /* hide by default */
+  }
+
+  nav.active {
+    display: block;        /* show when toggled */
+  }
+
+  .main-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main-nav > li {
+    margin: 10px 0;
+  }
+
+  /* Fix dropdowns in mobile */
+  .dropdown-content {
+    position: relative;    /* stack under parent */
+    background: #578dbe;
+    padding-left: 20px;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: none; /* disable hover on mobile */
+  }
+
+  .dropdown.open .dropdown-content {
+    display: block; /* show when clicked */
+  }
+}
+/* Menu icon styling */
+.menu-icon {
+  display: none;
+  font-size: 32px;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+  color:black;
+  background: #578dbe;
+}
+
+/* Responsive view */
+@media (max-width: 900px) {
+  .menu-icon {
+    display: block;        /* show menu icon */
+    width: 100%;
+  }
+
+  nav {
+    display: none;         /* hide by default */
+  }
+
+  nav.active {
+    display: block;        /* show when toggled */
+  }
+
+  .main-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main-nav > li {
+    margin: 10px 0;
+  }
+
+  /* Fix dropdowns in mobile */
+  .dropdown-content {
+    position: relative;    /* stack under parent */
+    background: #578dbe;
+    padding-left: 20px;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: none; /* disable hover on mobile */
+  }
+
+  .dropdown.open .dropdown-content {
+    display: block; /* show when clicked */
+  }
+}

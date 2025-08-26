@@ -1,0 +1,163 @@
+/* General Styles *
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* Image Slider *
+        .slider {
+            width: 100%;
+            max-width: 1200px;
+            height: 500px;
+            margin: 20px auto;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .slides {
+            display: flex;
+            width: 300%; /* 100% for each of the 3 slides *
+            height: 100%;
+            animation: slide 3s infinite ease-in-out;
+        }
+
+        .slide {
+            width: 33.333%; /* Each slide takes up a third of the container *
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .slide1 { background-image: url('web-images/IMG_4093.JPG'); }
+        .slide2 { background-image: url('web-images/IMG_4501.JPG'); }
+        .slide3 { background-image: url('web-images/IMG_4376.JPG'); }
+
+        @keyframes slide {
+            0% { transform: translateX(0%); }
+            30% { transform: translateX(0%); }
+            33% { transform: translateX(-33.333%); }
+            63% { transform: translateX(-33.333%); }
+            66% { transform: translateX(-66.666%); }
+            97% { transform: translateX(-66.666%); }
+            100% { transform: translateX(0%); }
+        }
+
+        /* Content Sections *
+        section {
+            padding: 60px 20px;
+            border-bottom: 1px solid #ddd;
+            background-color: #fff;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        
+        section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+            color: #0056b3;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: #007bff;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 15px;
+            text-decoration: none;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .card a:hover {
+            background-color: #0056b3;
+        }
+    
+      
+      /* Menu icon styling */
+.menu-icon {
+  display: none;
+  font-size: 32px;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+  color: black;
+  background: #578dbe;
+}
+
+/* Responsive view */
+@media (max-width: 900px) {
+  .menu-icon {
+    display: block;        /* show menu icon */
+    width: 100%;
+  }
+
+  nav {
+    display: none;         /* hide by default */
+  }
+
+  nav.active {
+    display: block;        /* show when toggled */
+  }
+
+  .main-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main-nav > li {
+    margin: 10px 0;
+  }
+
+  /* Fix dropdowns in mobile */
+  .dropdown-content {
+    position: relative;    /* stack under parent */
+    background: #578dbe;
+    padding-left: 20px;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: none; /* disable hover on mobile */
+  }
+
+  .dropdown.open .dropdown-content {
+    display: block; /* show when clicked */
+  }
+}
